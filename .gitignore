@@ -1,3 +1,5 @@
 __pycache__
 pythonApi/
 .env
+venv/
+Procfile
