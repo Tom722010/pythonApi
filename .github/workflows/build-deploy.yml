@@ -80,10 +80,10 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{secrets.PROD_HOST}}
-          port: 22
+          #port: 22
           username: ${{secrets.PROD_USERNAME}}
           password: ${{secrets.PROD_PASSWORD}}
-          key: ${{secrets.SSH_PRIVATE_KEY}} 
+          #key: ${{secrets.SSH_PRIVATE_KEY}} 
           script: |
             cd app/src
             git pull
