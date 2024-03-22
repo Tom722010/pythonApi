@@ -76,10 +76,6 @@ jobs:
     environment:
       name: production
     steps:
-      - name: Enable verbose logging
-        env:
-          GIT_SSH_command: "ssh -v"
-        run: echo "Enabling verbose logging"
       - name: deploy to ubuntu server
         uses: appleboy/ssh-action@master
         with:
